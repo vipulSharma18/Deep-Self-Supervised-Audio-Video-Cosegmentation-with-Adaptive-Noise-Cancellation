@@ -1,7 +1,6 @@
-# Sound-of-Pixels
-Codebase for ECCV18 "The Sound of Pixels".
-
-*This repository is under construction, but the core parts are already there.
+We create a model which trains on unlabeled videos and learns to locate and cluster image regions which generate sound via observing motion in those pixels. Our model gives as output the input sound separated into components corresponding to each sound-producing region in the video. Our model uses the basic reason as to how sound is generated, which is motion. We utilize this natural link between visual and auditory perception to create models which will jointly parse the sound and the images of objects creating those sounds, without requiring any labelling or annotation or manual supervision. 
+Our model is supposed to learn the visual-audio correspondence just like we humans can detect which sound is emitted from where by observing motion of objects. We will be able to obtain individual speeches and thus manipulate them as needed.
+Further, we have used Adaptive Noise Cancellation techniques with filters like LMS and RLS to try and  enhance the results of the model obtained.
 
 <img src="./teaser.png"/>
 
@@ -74,8 +73,7 @@ The code is developed under the following configurations.
 ./scripts/eval_MUSIC.sh
 ```
 
-## Reference
-If you use the code or dataset from the project, please cite:
+Citation:
 ```bibtex
     @InProceedings{Zhao_2018_ECCV,
         author = {Zhao, Hang and Gan, Chuang and Rouditchenko, Andrew and Vondrick, Carl and McDermott, Josh and Torralba, Antonio},
